@@ -1,0 +1,26 @@
+html {
+    scroll-snap-type: y mandatory;
+}
+
+.app {
+    height: 10vh;
+    background-color: black;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+.app__video {
+    position: relative;
+    height: 800px;
+    border-radius: 20px;
+    overflow: scroll;
+    width: 80%;
+    max-width: 500px;
+    scroll-snap-type: y mandatory;
+  }
+
+  /* Hide scrollbar from chrome safrari opera  */
+.app__video::-webkit-scrollbar {
+    display: none;
+}
