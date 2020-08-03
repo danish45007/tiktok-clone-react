@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import './Video.css';
 import { useRef } from 'react';
 import VideoFooterComponent from './VideoFooterComponent';
-function VideoComponent({url}) {
+import VideoSideBarComponent from './VideoSideBarComponent';
+
+function VideoComponent({url,channel,description,song,likes,messages,share}) {
 
     const [play, setPlay] = useState(false);
     // useRef in hook
@@ -27,7 +29,8 @@ function VideoComponent({url}) {
             onClick={onVideoPress}
             ref={videoRef} 
             src={url}></video>
-            <VideoFooterComponent />
+            <VideoFooterComponent channel={channel} description={description} song={song} />
+            <VideoSideBarComponent likes={likes} messages={messages} share={share} />
         </div>
     )
 }

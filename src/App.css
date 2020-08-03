@@ -3,6 +3,7 @@ html {
   }
   
   .app {
+    position: relative;
     height: 100vh;
     background-image: url("tiktok-background.jpg");
     background-repeat: no-repeat;
