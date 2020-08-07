@@ -1,3 +1,4 @@
+### Please use proxy/vpn/shield while opening the [TikTok Clone App]() coz tiktok is banned in India and I am pulling data directly from their server
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
